@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font: 16px/1.6 poppins;
+  /* font: 16px/1.6 montserrat; */
+}
+/* 
+h1,
+h2,
+h3 {
+  margin-bottom: 12px;
+  font-weight: 700;
+} */
+
+p {
+  margin-bottom: 12px;
+  font-family: "poppins";
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background: #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* it is left section */
+
+#left {
+  height: 100%;
+  width: 80%;
+}
+
+#left #ltop {
+  height: 70%;
+  width: 100%;
+  background: url(https://images.pexels.com/photos/4131784/pexels-photo-4131784.jpeg)
+    center/cover;
+  position: relative;
+}
+
+#ltbarrow {
+  height: 50px;
+  width: 70px;
+  color: black;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ltbarrow i {
+  font-size: 28px;
+}
+
+/* left bottom */
+
+#left #lbottom {
+  height: 30%;
+  width: 100%;
+  background: #222;
+  color: #d0dad6;
+  padding: 70px 200px;
+}
+
+/* left bottom content */
+
+#lbcontent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* left bottom left content */
+
+#lblcontent {
+  width: 45%;
+  height: 100%;
+}
+#lblcontent p {
+  font-size: 14px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* left bottom right contet */
+
+#lbrcontent {
+  width: 45%;
+  /* background: #000000; */
+}
+
+/* Row Element */
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.relem {
+  display: flex;
+}
+.relem i {
+  font-size: 1.5rem;
+  color: #d9fcf0;
+}
+.relemtext {
+  margin-left: 10px;
+  width: 250px;
+}
+.relemtext h5 {
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+/* It is right Section */
+
+#right {
+  height: 100%;
+  width: 20%;
+}
+
+#right #rtop {
+  height: 70%;
+  width: 100%;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  padding: 70px;
+  position: relative;
+}
+
+#right #rtop a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+#right #rtop #selected {
+  position: relative;
+  margin-left: 20px;
+}
+#right #rtop #selected::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  background-color: #222;
+  top: 40%;
+  left: -20px;
+}
+
+#right #rtop #icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#right #rtop #icons i {
+  font-size: 20px;
+}
+
+#rtbflower {
+  width: 100px;
+  height: 120px;
+  background: url(https://images.unsplash.com/photo-1502810365585-56ffa361fdde?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    center/cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#rtbflower i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  color: white;
+  background: #0009;
+  border-radius: 50%;
+}
+
+#right #rbottom {
+  height: 30%;
+  width: 100%;
+  background: url(https://images.unsplash.com/photo-1673361553428-719cf1f4c7c7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    bottom/cover;
+  position: relative;
+  padding: 20px;
+}
+#right #rbottom #capsule {
+  position: absolute;
+  padding: 10px 20px;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%;
+  background-color: #fff;
+  /* From https://css.glass */
+  background: rgba(201, 255, 236, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
+  border: 1px solid rgba(201, 255, 236, 0.3);
+  color: #fff;
+}
+#right #rbottom #capsule h2 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 10px 0 4px 0;
+}
+#right #rbottom #capsule h6 {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+}
+#right #rbottom #capsule p {
+  font-size: 12px;
+  width: 90%;
+  opacity: 0.5;
+  font-weight: 500;
+}
